@@ -1,5 +1,7 @@
 # LogMaker
 ### Project Name : Make Log Lib
+#### Version
+Version:0.0.1-DEV
 #### First
 I hope you will see our ***wiki***.
 I write something in it.
