@@ -6,7 +6,7 @@
 
     <groupId>Log</groupId>
     <artifactId>git.hello2048.log</artifactId>
-    <version>0.0.1-DEV</version>
+    <version>0.0.2-DEV</version>
 
     <!-- SNAPSHOT/BETA/DEV -->
 </project>

@@ -22,7 +22,6 @@ public class Log {
                     } catch (IOException e1) {
                         e1 = null;
                         type = null;
-                        System.gc();
                         System.err.println("导出日志失败!");
                         System.gc();
                         System.exit(5);
