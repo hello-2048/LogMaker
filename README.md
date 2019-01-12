@@ -1,11 +1,14 @@
 # LogMaker
-### Project Name : Make Log Lib
-#### First
-I hope you will see our ***wiki***.
-I write something in it.
-If you hava *developing problem* you can see it.
-#### Next
-I will work hard to updata this.
-Thank you download ours!
-**Maker:
+## 项目名字: LogerMaker
+####版本
+***版本： 0.0.1***
+***目前状态：DEV***
+#### 必看
+推荐Java版本：1.8.0_192及以上
+我希望你能看我们的 ***wiki***.
+我在里面写了些关于开发的东西。
+如果你开发时遇到了些问题，可以看看。
+#### 接下来
+感谢阁下的下载!
+**作者:
 1.hello-2048**
