@@ -18,33 +18,32 @@ class FileLog {
             try {
                 new File("data\\lastlog.log").createNewFile();
             } catch (IOException e) {
-                e.printStackTrace();
+                // nothing
+                System.gc();
             }
         } else {
             try {
                 new File("data\\lastlog.log").createNewFile();
             } catch (IOException e) {
-                e.printStackTrace();
+                // nothing
+                System.gc();
             }
         }
     }
     protected FileLog(String message) throws Exception {
-        File file = new File("data");
-        file.mkdirs();
-        file = null;
-        file = new File("data\\lastlog.log");
+        File file = new File("data\\lastlog.log");
         if(file.exists()) {
             file.delete();
             file.createNewFile();
-        } else if(file.exists()) {
-            //nothing
         } else {
             file.createNewFile();
         }
         OutFile(file,message);
+        file = null;
+        message = null;
+        System.gc();
     }
-    private static final void OutFile(File file,String message) throws
-            Exception {
+    private static final void OutFile(File file,String message) throws Exception {
         FileOutputStream fos = new FileOutputStream(file);
         if(file.exists() == false) {
             return;
@@ -52,5 +51,9 @@ class FileLog {
         message = "[" + new Date() + "]" + " " + message + "\n";
         fos.write(message.getBytes());
         fos.close();
+        fos = null;
+        file = null;
+        message = null;
+        System.gc();
     }
 }
